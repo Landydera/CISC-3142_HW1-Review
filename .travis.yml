@@ -1,0 +1,7 @@
+language: c++
+
+script:
+ - g++ main.cpp compare.cpp
+ - ./a.out 8 4
+ - ./a.out 3 5
+ - ./a.out 3 3

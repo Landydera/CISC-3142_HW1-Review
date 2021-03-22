@@ -5,7 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-  // The function atoi take a string argument and return an //int.
+  // The function atoi take a string argument and return an int
 // declare and initialize two int variable x and y
  int x=atoi(argv[1]);
  int y=atoi(argv[2]);

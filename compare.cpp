@@ -1,7 +1,10 @@
 // Islande Derazin
 
 #include "compare.h"
+#include <iostream>
+
 using namespace std;
+//using namespace N;
 
 // the function whichIsBigger will find  if the numbers are the same if not, which one is larger.
 int whichIsBigger(int x, int y, bool &same) { 
@@ -28,7 +31,7 @@ int makeBothSame(int x, int &y)
     // create and temp value and initialize it to y value
     int temp =y;
     // set temp value y to x
-    x=y;
+    y=x;
     return temp;
   }
   else

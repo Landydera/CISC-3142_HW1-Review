@@ -1,7 +1,7 @@
 #include <cstdlib>
-#include <iostream>
 #include "compare.h"
 using namespace std;
+
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +11,11 @@ int main(int argc, char *argv[])
  int y=atoi(argv[2]);
 
   bool same, swapped;
+
+  // The method makeBothSame will print whether or not x and y are equal.
+  int sameInt= makeBothSame(x, y);
+  if(sameInt !=0)
+  cout<<"Now x and y both equal "<<x<<". Previously, y's value was"<< sameInt<<endl;
   
   // Create an integer that will hold the value of the larger integer
   int biggestVallue= whichIsBigger(x, y, same);
@@ -25,11 +30,8 @@ int main(int argc, char *argv[])
   cout<<"x new value is "<<x<<" y new value is "<<y<<endl;
   else
   cout<<"x and y were not swapped because they were already in the right order."<<endl;
-  // The method makeBothSame will print whether or not x and y are equal.
 
-  int sameInt= makeBothSame(x, y);
-  if(sameInt !=0)
-  cout<<"Now x and y both equal "<<x<<". Previously, y's value was"<< sameInt<<endl;
-
+  
+ 
   return 0;
 }
